@@ -16,7 +16,7 @@ A PHP file with the generated class will be downloaded automatically.
 
 ## Support
 
-If you have any questions or issues with the plugin, please contact us at Boon.Band.
+If you have any questions or issues with the plugin, please contact us at [https://boon.band/](https://boon.band/).
 
 ## Sharing
 
@@ -24,7 +24,7 @@ If you find this plugin useful, please feel free to share it with others and lin
 
 ## Credits
 
-This plugin was developed by the IT Rock stars at Boon.Band.
+This plugin was developed by the IT Rock stars at [https://boon.band/](https://boon.band/).
 
 ## Disclaimer
 
