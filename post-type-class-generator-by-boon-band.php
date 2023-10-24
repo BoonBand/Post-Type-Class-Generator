@@ -12,14 +12,17 @@ License: GPL2
 // Main functionality
 function generate_post_type_class($post_type)
 {
-    $temp = acf_get_field_groups(array('post_type' => $post_type));
-
     // Initialize an empty array for meta_keys
     $meta_keys = array();
 
-    // Check if the array is not empty before processing ACF fields
-    if (!empty($temp)) {
-        $meta_keys = acf_get_fields($temp[0]['key']);
+    // Check whether or not ACF is installed
+    if (function_exists('acf_get_field_groups')) {
+        $temp = acf_get_field_groups(array('post_type' => $post_type));
+
+        // Check if the array is not empty before processing ACF fields
+        if (!empty($temp)) {
+            $meta_keys = acf_get_fields($temp[0]['key']);
+        }
     }
 
     $class_name = ucwords(str_replace('_', ' ', $post_type));
